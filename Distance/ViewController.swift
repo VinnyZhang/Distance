@@ -119,7 +119,7 @@ class ViewController: UIViewController , ARSCNViewDelegate{
         }
         if isMeasuring {//如果处于测量状态
             if vectorStart == vectorZero {
-                vectorStart = worldPosition//把现在的位置何止为开始
+                vectorStart = worldPosition//把现在的位置设置为开始
                 currentLine = Line(sceneView: sceneView, startVector: vectorStart, unit: unit)
             }
             
