@@ -89,6 +89,9 @@ class ViewController: UIViewController , ARSCNViewDelegate{
         
         sceneView.session = session
         
+        sceneView.showsStatistics = true
+        sceneView.debugOptions = [ARSCNDebugOptions.showWorldOrigin,ARSCNDebugOptions.showFeaturePoints]
+        
         infoLabel = UILabel()
         self.view.addSubview(infoLabel)
         infoLabel.frame = CGRect(x: 0, y: 20, width: self.view.frame.size.width, height: 30)
